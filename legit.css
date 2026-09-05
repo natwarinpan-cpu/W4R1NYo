@@ -1,0 +1,233 @@
+:root {
+--primary-color: #;
+--primary-dark: #2980b9;
+--text-color: #333;
+--text-light: #666;
+--dark-color: #2c3e50;
+--spacing-lg: 40px;
+--spacing-xl: 80px;
+--radius: 12px;
+--transition: 0.3s ease;
+}
+
+/* ================= RESET ================= */
+
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+color: var(--text-color);
+line-height: 1.7;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+min-height: 90vh;
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: #5dade2;
+
+color: white;
+
+text-align: center;
+
+
+}
+
+.hero h1 {
+font-size: clamp(2rem, 8vw, 4rem);
+
+
+margin-bottom: 10px;
+
+
+}
+
+.hero-subtitle {
+font-size: 1.2rem;
+}
+
+/* ================= SECTION ================= */
+
+.section {
+padding-top: var(--spacing-xl);
+padding-bottom: var(--spacing-xl);
+}
+
+.section-label {
+color: var(--primary-color);
+
+
+font-weight: 700;
+
+font-size: 0.9rem;
+
+margin-bottom: 5px;
+
+
+}
+
+.section h2 {
+font-size: clamp(1.8rem, 5vw, 2.5rem);
+
+
+margin-bottom: 20px;
+
+
+}
+
+/* ================= PROFILE ================= */
+
+.profile-image {
+width: 300px;
+height: 300px;
+
+
+max-width: 100%;
+
+object-fit: cover;
+
+border-radius: 50%;
+
+
+}
+
+/* ================= SKILL CARD ================= */
+
+.skill-card {
+border: none;
+
+
+border-radius: var(--radius);
+
+transition: var(--transition);
+
+
+}
+
+.skill-card:hover {
+transform: translateY(-8px);
+
+
+box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12);
+
+
+}
+
+.card-icon {
+font-size: 1.5rem;
+
+
+font-weight: 700;
+
+color: var(--primary-color);
+
+margin-bottom: 10px;
+
+
+}
+
+/* ================= PROJECT CARD ================= */
+
+.project-card {
+border: none;
+
+
+border-radius: var(--radius);
+
+overflow: hidden;
+
+transition: var(--transition);
+
+
+}
+
+.project-card:hover {
+transform: translateY(-8px);
+
+
+box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12);
+
+
+}
+
+.project-card img {
+width: 100%;
+
+
+height: 200px;
+
+object-fit: cover;
+
+
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+padding-top: var(--spacing-lg);
+padding-bottom: var(--spacing-lg);
+
+
+background: var(--dark-color);
+
+color: white;
+
+
+}
+
+.footer a {
+color: white;
+
+
+text-decoration: none;
+
+margin-left: 20px;
+
+transition: var(--transition);
+
+
+}
+
+.footer a:hover {
+color: #5dade2;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 640px) {
+
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero {
+    min-height: 80vh;
+}
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+}
+
+.footer a {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+
+}
